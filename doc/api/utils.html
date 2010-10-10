@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8" />
-<title>Doodle.js - API: utils</title>
+<title>Doodle.js - API: doodle.utils</title>
 <link href="./style/reset.css" rel="stylesheet" type="text/css">
 <link href="./style/main.css" rel="stylesheet" type="text/css">
 <link href="http://fonts.googleapis.com/css?family=Droid+Sans+Mono&subset=latin" rel="stylesheet" type="text/css">
@@ -45,8 +45,10 @@
 <dl>
 <dt><dfn>utils</dfn> </dt>
 <dd>
-<p>Doodle utilty functions.</p>
+<p></p>
 <details>
+
+
 
 
 
@@ -88,6 +90,8 @@
 </ul>
 
 
+
+
 </details>
 </dd>
 <dt><dfn>check_display_type</dfn> (display:Display, caller:string, params:string) :boolean</dt>
@@ -111,6 +115,8 @@
 <ul>
 <li>TypeError &#8211; </li>
 </ul>
+
+
 
 
 </details>
@@ -138,6 +144,8 @@
 </ul>
 
 
+
+
 </details>
 </dd>
 <dt><dfn>check_eventdispatcher_type</dfn> (obj:EventDispatcher, caller:string, params:string) :boolean</dt>
@@ -163,16 +171,18 @@
 </ul>
 
 
+
+
 </details>
 </dd>
-<dt><dfn>check_event_type</dfn> (event:Event, caller:string, params:string) :boolean</dt>
+<dt><dfn>check_event_type</dfn> (event:doodle.events.Event, caller:string, params:string) :boolean</dt>
 <dd>
 <p></p>
 <details>
 
 <h3>Parameters</h3>
 <ol>
-<li>event:Event &#8211;  </li>
+<li>event:doodle.events.Event &#8211;  </li>
 <li>caller:string &#8211;  </li>
 <li>params:string &#8211;  </li>
 </ol>
@@ -188,16 +198,18 @@
 </ul>
 
 
+
+
 </details>
 </dd>
-<dt><dfn>check_keyboardevent_type</dfn> (event:Event, caller:string, params:string) :boolean</dt>
+<dt><dfn>check_keyboardevent_type</dfn> (event:doodle.events.Event, caller:string, params:string) :boolean</dt>
 <dd>
 <p></p>
 <details>
 
 <h3>Parameters</h3>
 <ol>
-<li>event:Event &#8211;  </li>
+<li>event:doodle.events.Event &#8211;  </li>
 <li>caller:string &#8211;  </li>
 <li>params:string &#8211;  </li>
 </ol>
@@ -211,6 +223,8 @@
 <ul>
 <li>TypeError &#8211; </li>
 </ul>
+
+
 
 
 </details>
@@ -238,6 +252,8 @@
 </ul>
 
 
+
+
 </details>
 </dd>
 <dt><dfn>check_matrix_type</dfn> (obj:Object, caller:string, params:string) :boolean</dt>
@@ -263,16 +279,18 @@
 </ul>
 
 
+
+
 </details>
 </dd>
-<dt><dfn>check_mouseevent_type</dfn> (event:MouseEvent, caller:string, params:string) :boolean</dt>
+<dt><dfn>check_mouseevent_type</dfn> (event:doodle.events.MouseEvent, caller:string, params:string) :boolean</dt>
 <dd>
 <p></p>
 <details>
 
 <h3>Parameters</h3>
 <ol>
-<li>event:MouseEvent &#8211;  </li>
+<li>event:doodle.events.MouseEvent &#8211;  </li>
 <li>caller:string &#8211;  </li>
 <li>params:string &#8211;  </li>
 </ol>
@@ -286,6 +304,8 @@
 <ul>
 <li>TypeError &#8211; </li>
 </ul>
+
+
 
 
 </details>
@@ -313,6 +333,8 @@
 </ul>
 
 
+
+
 </details>
 </dd>
 <dt><dfn>check_point_type</dfn> (pt:Object, caller:string, params:string) :boolean</dt>
@@ -336,6 +358,8 @@
 <ul>
 <li>TypeError &#8211; </li>
 </ul>
+
+
 
 
 </details>
@@ -363,6 +387,8 @@
 </ul>
 
 
+
+
 </details>
 </dd>
 <dt><dfn>check_sprite_type</dfn> (sprite:Sprite, caller:string, params:string) :boolean</dt>
@@ -388,16 +414,18 @@
 </ul>
 
 
+
+
 </details>
 </dd>
-<dt><dfn>check_textevent_type</dfn> (event:TextEvent, caller:string, params:string) :boolean</dt>
+<dt><dfn>check_textevent_type</dfn> (event:doodle.events.TextEvent, caller:string, params:string) :boolean</dt>
 <dd>
 <p></p>
 <details>
 
 <h3>Parameters</h3>
 <ol>
-<li>event:TextEvent &#8211;  </li>
+<li>event:doodle.events.TextEvent &#8211;  </li>
 <li>caller:string &#8211;  </li>
 <li>params:string &#8211;  </li>
 </ol>
@@ -413,16 +441,18 @@
 </ul>
 
 
+
+
 </details>
 </dd>
-<dt><dfn>check_touchevent_type</dfn> (event:TouchEvent, caller:string, params:string) :boolean</dt>
+<dt><dfn>check_touchevent_type</dfn> (event:doodle.events.TouchEvent, caller:string, params:string) :boolean</dt>
 <dd>
 <p></p>
 <details>
 
 <h3>Parameters</h3>
 <ol>
-<li>event:TouchEvent &#8211;  </li>
+<li>event:doodle.events.TouchEvent &#8211;  </li>
 <li>caller:string &#8211;  </li>
 <li>params:string &#8211;  </li>
 </ol>
@@ -438,16 +468,18 @@
 </ul>
 
 
+
+
 </details>
 </dd>
-<dt><dfn>check_uievent_type</dfn> (event:UIEvent, caller:string, params:string) :boolean</dt>
+<dt><dfn>check_uievent_type</dfn> (event:doodle.events.UIEvent, caller:string, params:string) :boolean</dt>
 <dd>
 <p></p>
 <details>
 
 <h3>Parameters</h3>
 <ol>
-<li>event:UIEvent &#8211;  </li>
+<li>event:doodle.events.UIEvent &#8211;  </li>
 <li>caller:string &#8211;  </li>
 <li>params:string &#8211;  </li>
 </ol>
@@ -461,6 +493,8 @@
 <ul>
 <li>TypeError &#8211; </li>
 </ul>
+
+
 
 
 </details>
@@ -484,6 +518,8 @@
 <ul>
 <li>TypeError &#8211; </li>
 </ul>
+
+
 
 
 </details>
@@ -510,6 +546,8 @@
 </ul>
 
 
+
+
 </details>
 </dd>
 <dt><dfn>rgb_str_to_hex</dfn> (rgb:string) :string</dt>
@@ -531,6 +569,8 @@
 <ul>
 <li>TypeError &#8211; </li>
 </ul>
+
+
 
 
 </details>
@@ -555,6 +595,8 @@
 <li>TypeError &#8211; </li>
 <li>SyntaxError &#8211; </li>
 </ul>
+
+
 
 
 </details>
@@ -582,6 +624,8 @@
 </ul>
 
 
+
+
 </details>
 </dd>
 <dt><dfn>rgb_to_rgb_str</dfn> (r:number, g:number, b:number, a:number) :string</dt>
@@ -606,6 +650,8 @@
 <ul>
 <li>TypeError &#8211; </li>
 </ul>
+
+
 
 
 </details>
@@ -635,6 +681,8 @@
 </ul>
 
 
+
+
 </details>
 </dd>
 <dt><dfn>get_style_property</dfn> (element:HTMLElement, property:string, useComputedStyle:boolean) :*</dt>
@@ -661,6 +709,8 @@
 </ul>
 
 
+
+
 </details>
 </dd>
 <dt><dfn>get_element</dfn> (element:HTMLElement|string) :HTMLElement</dt>
@@ -677,6 +727,8 @@
 <ul>
 <li>HTMLElement &#8211; </li>
 </ul>
+
+
 
 
 
@@ -705,6 +757,8 @@
 <ul>
 <li>ReferenceError &#8211; </li>
 </ul>
+
+
 
 
 </details>

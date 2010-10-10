@@ -71,22 +71,23 @@ $(document).ready(function () {
    */
   $('.main dt, .main ol li').each(function () {
     var item = $(this),
-        txt = item.html(),
+        html = item.html().replace(/doodle\.events\./g, ''), //remove package info
         regexp;
+    
     for (var type in type_docs) {
       regexp = new RegExp(":"+type, 'g');
-      if (regexp.test(txt)) {
-        txt = txt.replace(regexp, ":<a href='"+ type_docs[type] +"'>"+ type +"</a>");
+      if (regexp.test(html)) {
+        html = html.replace(regexp, ":<a href='"+ type_docs[type] +"'>"+ type +"</a>");
       }
       regexp = new RegExp("\\|"+type, 'g');
-      if (regexp.test(txt)) {
-        txt = txt.replace(regexp, "|<a href='"+ type_docs[type] +"'>"+ type +"</a>");
+      if (regexp.test(html)) {
+        html = html.replace(regexp, "|<a href='"+ type_docs[type] +"'>"+ type +"</a>");
       }
     }
-    item.html(txt);
+    item.html(html);
   });
 
-  /* Class description, inherititance list
+  /* Class description, inheritance list
    * list on single line with arrow between
    */
   $("h3:contains('Inherits') + ol li").each(function (idx) {
@@ -154,6 +155,18 @@ $(document).ready(function () {
     item.html(txt);
   });
 
+  /* See-also header */
+  $('.main details h3:contains("See Also")').css('margin-bottom', '-2px');
+  /* See-also links */
+  $('.main details h3:contains("See Also") + ul li').each(function () {
+    var item = $(this);
+    item.css({'font-size': '0.8em', 'line-height': '1.4em'});
+    item.html(
+      item.html()
+        .replace(/\[Canvas API\]/, "<span class='param_annotation'>[Canvas API]</span>")
+        .replace(/\[Canvas Tutorial\]/, "<span class='param_annotation'>[Canvas Tutorial]</span>")
+        .replace(/\[JS Ref\]/, "<span class='param_annotation'>[JS Ref]</span>"));
+  });
 
   /* Add menu collapse button
    */
