@@ -2,3 +2,4 @@ build/*.jar
 lib/
 src/
 doc/demos/tmp/
+doc/class-hierarchy.txt
